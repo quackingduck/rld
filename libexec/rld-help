@@ -34,12 +34,11 @@ if [ "$1" = "--complete" ]; then
 fi
 
 case "$1" in
-"") echo "Usage: rld <command> [<args>]
+"") echo "Usage: rld <command>
 
-Some useful rld commands are:
+Commands:
 $(print_summaries)
-
-See 'rld help <command>' for information on a specific command."
+"
 ;;
 *)
   command_path="$(command -v "$_RLD_ROOT/libexec/rld-$1" || true)"
