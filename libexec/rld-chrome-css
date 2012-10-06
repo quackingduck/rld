@@ -1,0 +1,15 @@
+#!/bin/bash
+# Usage: rld chrome-css
+# Summary: Reloads just the linked CSS of the frontmost tab in Google Chrome
+
+js=`cat $_RLD_ROOT/share/reload-css.js`
+
+osascript -e "$(cat <<EOS
+tell application "Google Chrome"
+  tell active tab of window 1
+    execute javascript "$js"
+  end tell
+end tell
+EOS)" > /dev/null
+
+echo "reloaded chrome css"

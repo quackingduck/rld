@@ -1,0 +1,11 @@
+#!/bin/bash
+# Usage: rld chrome
+# Summary: Reloads the frontmost tab in Google Chrome
+
+osascript -e "$(cat <<EOS
+tell application "Google Chrome"
+  reload active tab of window 1
+end tell
+EOS)"  > /dev/null
+
+echo "reloaded chrome"
