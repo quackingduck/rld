@@ -1,6 +1,6 @@
 
 install:
-	@ make install-home || make install-usrlocal
+	@ make install-usrlocal || make install-home
 
 install-home:
 	@ test -d ~/bin && ln -s $(PWD)/bin/rld ~/bin/ && \
@@ -12,6 +12,6 @@ install-usrlocal:
 
 uninstall:
 	@ 	 ( test -h ~/bin/rld && rm ~/bin/rld ) \
-		|| ( test -h /usr/local/bin/rld && rm /usr/local/bin/rld ) \
+		;  ( test -h /usr/local/bin/rld && rm /usr/local/bin/rld ) \
 		|| true
 	@ echo "all rld command symlinks removed"
