@@ -17,3 +17,9 @@
     Can also reload just the linked CSS
 
         rld chrome-css
+    
+    To install
+        
+        git https://github.com/quackingduck/rld.git
+        cd rld
+        make install
