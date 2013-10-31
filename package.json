@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git://github.com/quackingduck/rld.git"
   },
+  "bin": "./libexec/rld",
   "author": "Myles Byrne <myles@myles.id.au>",
   "license": "BSD",
   "bugs": {
