@@ -20,6 +20,6 @@
     
     To install
         
-        git https://github.com/quackingduck/rld.git
+        git clone https://github.com/quackingduck/rld.git
         cd rld
         make install
