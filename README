@@ -10,6 +10,8 @@
     8 8888     `88. 8 888888888888 8 888888888P'
 
 
+    (OS X only, Chrome only patches welcome)
+
     Reloads the frontmost browser tab. E.g.
 
         rld chrome
@@ -18,7 +20,11 @@
 
         rld chrome-css
     
-    To install
+    To install with NPM (Node Packaged Modules)
+    
+        npm install -g rld
+    
+    Or from source
         
         git clone https://github.com/quackingduck/rld.git
         cd rld
