@@ -1,0 +1,10 @@
+#!/bin/bash
+# Usage: rld chrome
+# Summary: Reloads the frontmost tab in Safari
+
+osascript -e "
+tell application \"Safari\"
+  do JavaScript \"window.location.reload()\" in current tab of front window
+end tell" > /dev/null
+
+echo "reloaded safari"
