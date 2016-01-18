@@ -1,10 +1,10 @@
 {
   "name": "rld",
-  "version": "0.3.0",
-  "description": "Reload the frontmost browser tab",
+  "version": "1.0.0",
+  "description": "Reload the frontmost browser tab. OSX only. Written in bash",
   "repository": {
     "type": "git",
-    "url": "git://github.com/quackingduck/rld.git"
+    "url": "https://github.com/quackingduck/rld.git"
   },
   "bin": "./libexec/rld",
   "author": "Myles Byrne <myles@myles.id.au>",
